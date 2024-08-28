@@ -1,0 +1,89 @@
+@import "bootstrap/scss/bootstrap";
+
+$background-color: #0D1B2A;
+$text-color: #E0E1DD;
+$text-color2: #b9b9b9;
+$text-color3: #a5a4a4;
+$hover: #415A77;
+
+// https://coolors.co/palette/0d1b2a-1b263b-415a77-778da9-e0e1dd
+html,
+body {
+    background-color: $background-color;
+    height: 100%;
+    width: 100%;
+    color: $text-color;
+}
+
+.color2 {
+    color: $text-color2 !important;
+}
+
+.color3 {
+    color: $text-color3 !important;
+}
+
+li {
+    list-style: none;
+}
+
+.offsiteLink{
+    color: $text-color2;
+    svg {
+        margin: 0;
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    &:hover {
+        transition: 250ms;
+        color: $text-color;
+    }
+}
+
+// nav
+.navLine {
+    width: 2rem;
+    margin-right: 1rem;
+    display: inline-block;
+    border-bottom: $text-color3 2px solid;
+    transition: width 250ms, border-bottom 250ms; // Apply transition outside of :hover
+}
+
+.navText {
+    display: flex;
+    width: fit-content;
+    align-items: center;
+    color: $text-color3;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 250ms, font-weight 250ms; // Apply transition outside of :hover
+
+    &:hover {
+        color: $text-color;
+        font-weight: bold;
+
+        .navLine {
+            border-bottom: $text-color 2px solid;
+            width: 3rem;
+        }
+    }
+
+    .active {
+        color: $text-color;
+        font-weight: bold;
+    }
+}
+
+.btn {
+    color: $text-color;
+    border: #778DA9 3px solid;
+
+    &:hover {
+        border-color: #415A77;
+        transform: scale(1.1);
+        transition: 250ms;
+    }
+    &:active {
+        border-color: #1B263B !important;
+    }
+}
