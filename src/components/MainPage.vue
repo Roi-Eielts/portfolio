@@ -3,6 +3,15 @@ export default {
     methods: {
         sendMail() {
             window.location.href = "mailto:roieielts@gmail.com";
+        },
+        downloadResume() {
+            const link = document.createElement('a');
+            link.href = '../src/assets/Resume.pdf'
+            link.target = '_blank'
+            link.download = "Resume Roi Eielts.pdf"
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
         }
     }
 };
@@ -61,8 +70,8 @@ export default {
                             experiences!
                         </p>
                         <div class="d-flex justify-content-between">
-                            <button class="mx-auto btn color"><font-awesome-icon icon="fa-solid fa-download"
-                                    class="me-2" />Resume</button>
+                            <button class="mx-auto btn color" @click="downloadResume"><font-awesome-icon
+                                    icon="fa-solid fa-download" class="me-2" />Resume</button>
                             <button class="mx-auto btn color" @click="sendMail"><font-awesome-icon
                                     icon="fa-solid fa-envelope" class="me-2" />Email me</button>
 
