@@ -7,6 +7,10 @@ $text-color3: #a5a4a4;
 $hover: #415A77;
 
 // https://coolors.co/palette/0d1b2a-1b263b-415a77-778da9-e0e1dd
+html {
+    scroll-behavior: smooth;
+}
+
 html,
 body {
     background-color: $background-color;
@@ -23,20 +27,32 @@ body {
     color: $text-color3 !important;
 }
 
-li {
+.ls-none {
     list-style: none;
 }
 
-.offsiteLink{
+.offsiteLink {
     color: $text-color2;
+    transition: 250ms ease-in-out;
+
     svg {
         margin: 0;
         width: 1.5rem;
         height: 1.5rem;
     }
+
     &:hover {
-        transition: 250ms;
+        transform: scale(1.2);
         color: $text-color;
+        .gmail {
+            transition: 250ms;
+            color: #c71610;
+        }
+
+        .linkedIn {
+            transition: 250ms;
+            color: #0077B5;
+        }
     }
 }
 
@@ -67,11 +83,6 @@ li {
             width: 3rem;
         }
     }
-
-    .active {
-        color: $text-color;
-        font-weight: bold;
-    }
 }
 
 .btn {
@@ -83,7 +94,19 @@ li {
         transform: scale(1.1);
         transition: 250ms;
     }
+
     &:active {
         border-color: #1B263B !important;
+    }
+}
+
+.activeNav.navText {
+    color: $text-color !important;
+    font-weight: bold;
+
+    .navLine {
+        border-bottom: $text-color 2px solid !important;
+        width: 3rem;
+        transition: width 250ms, border-bottom 250ms;
     }
 }
