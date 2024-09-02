@@ -1,4 +1,6 @@
 <script>
+import Projects from './projects.vue'
+
 export default {
     methods: {
         sendMail() {
@@ -23,11 +25,11 @@ export default {
                 style="top: 0; max-height: 100vh; overflow-y: auto; padding-top: 6rem; padding-bottom: 6rem;">
                 <div>
                     <div>
-                        <a href="#" class="text-decoration-none text-reset">
-                            <h1 class="display-3 fw-bold">Roï Eielts</h1>
+                        <a href="#">
+                            <h1 class="headText">Roï Eielts</h1>
                         </a>
                         <h3 class="color2">Student Software Developer</h3>
-                        <p class="color3">I am an exam year student software developer at Scalda Vlissingen.</p>
+                        <p class="color3">A cup of coffee is a must have <font-awesome-icon icon="fa-solid fa-mug-hot" class="me-2" /></p>
                     </div>
                     <ul class="mt-5 d-sm-none d-md-block d-none d-sm-block">
                         <li class="ls-none">
@@ -36,9 +38,15 @@ export default {
                             </a>
                         </li>
                         <li class="ls-none">
-                            <a class="navText" :class="{ 'activeNav': currentSection === 'languages' }"
-                                href="#languages">
-                                <span class="navLine"></span>Languages/Frameworks/Pre-processors
+                            <a class="navText" :class="{ 'activeNav': currentSection === 'Knowledge' }"
+                                href="#Knowledge">
+                                <span class="navLine"></span>Knowledge
+                            </a>
+                        </li>
+                        <li class="ls-none">
+                            <a class="navText" :class="{ 'activeNav': currentSection === 'projects' }"
+                                href="#projects">
+                                <span class="navLine"></span>Projects
                             </a>
                         </li>
                     </ul>
@@ -100,7 +108,7 @@ export default {
                                 more
                                 experiences!
                             </p>
-                            <div class="d-flex justify-content-between">
+                            <div class="d-flex justify-content-between mt-5">
                                 <button class="mx-auto btn color" @click="downloadResume">
                                     <font-awesome-icon icon="fa-solid fa-download" class="me-2" />Resume</button>
                                 <button class="mx-auto btn color" @click="sendMail">
@@ -109,135 +117,75 @@ export default {
                             </div>
                         </div>
                     </section>
+                    <section class="min-vh-100 w-100">
+                        <h2 id="Knowledge" class="fw-bolder">Knowledge</h2>
+                        <div class="d-flex flex-wrap">
+                            <div class="mb-4 me-4 py-2 px-3 bg-secondary rounded">
+                                <p class="fw-bold fs-5 m-0 p-0 d-inline-flex">C#</p>
+                            </div>
+                            <div class="mb-4 me-4 py-2 px-3 bg-secondary rounded">
+                                <p class="fw-bold fs-5 m-0 p-0 d-inline-flex">CSS</p>
+                            </div>
+                            <div class="mb-4 me-4 py-2 px-3 bg-secondary rounded">
+                                <p class="fw-bold fs-5 m-0 p-0 d-inline-flex">JavaScript</p>
+                            </div>
+                            <div class="mb-4 me-4 py-2 px-3 bg-secondary rounded">
+                                <p class="fw-bold fs-5 m-0 p-0 d-inline-flex">Java</p>
+                            </div>
+                            <div class="mb-4 me-4 py-2 px-3 bg-secondary rounded">
+                                <p class="fw-bold fs-5 m-0 p-0 d-inline-flex">HTML</p>
+                            </div>
+                            <div class="mb-4 me-4 py-2 px-3 bg-secondary rounded">
+                                <p class="fw-bold fs-5 m-0 p-0 d-inline-flex">PHP</p>
+                            </div>
+                            <div class="mb-4 me-4 py-2 px-3 bg-secondary rounded">
+                                <p class="fw-bold fs-5 m-0 p-0 d-inline-flex">TypeScript</p>
+                            </div>
+                            <div class="mb-4 me-4 py-2 px-3 bg-secondary rounded">
+                                <p class="fw-bold fs-5 m-0 p-0 d-inline-flex">Python</p>
+                            </div>
+                            <div class="mb-4 me-4 py-2 px-3 bg-secondary rounded">
+                                <p class="fw-bold fs-5 m-0 p-0 d-inline-flex">Hibernate</p>
+                            </div>
+                            <div class="mb-4 me-4 py-2 px-3 bg-secondary rounded">
+                                <p class="fw-bold fs-5 m-0 p-0 d-inline-flex">.Net</p>
+                            </div>
+                            <div class="mb-4 me-4 py-2 px-3 bg-secondary rounded">
+                                <p class="fw-bold fs-5 m-0 p-0 d-inline-flex">Angular</p>
+                            </div>
+                            <div class="mb-4 me-4 py-2 px-3 bg-secondary rounded">
+                                <p class="fw-bold fs-5 m-0 p-0 d-inline-flex">Bootstrap</p>
+                            </div>
+                            <div class="mb-4 me-4 py-2 px-3 bg-secondary rounded">
+                                <p class="fw-bold fs-5 m-0 p-0 d-inline-flex">jQuery</p>
+                            </div>
+                            <div class="mb-4 me-4 py-2 px-3 bg-secondary rounded">
+                                <p class="fw-bold fs-5 m-0 p-0 d-inline-flex">React Native</p>
+                            </div>
+                            <div class="mb-4 me-4 py-2 px-3 bg-secondary rounded">
+                                <p class="fw-bold fs-5 m-0 p-0 d-inline-flex">React</p>
+                            </div>
+                            <div class="mb-4 me-4 py-2 px-3 bg-secondary rounded">
+                                <p class="fw-bold fs-5 m-0 p-0 d-inline-flex">SCSS</p>
+                            </div>
+                            <div class="mb-4 me-4 py-2 px-3 bg-secondary rounded">
+                                <p class="fw-bold fs-5 m-0 p-0 d-inline-flex">Spring</p>
+                            </div>
+                            <div class="mb-4 me-4 py-2 px-3 bg-secondary rounded">
+                                <p class="fw-bold fs-5 m-0 p-0 d-inline-flex">Vue.js</p>
+                            </div>
+                            <div class="mb-4 me-4 py-2 px-3 bg-secondary rounded">
+                                <p class="fw-bold fs-5 m-0 p-0 d-inline-flex">Three.js</p>
+                            </div>
+                            <div class="mb-4 me-4 py-2 px-3 bg-secondary rounded">
+                                <p class="fw-bold fs-5 m-0 p-0 d-inline-flex">SEO</p>
+                            </div>
+                        </div>
+                    </section>
                     <section class="min-vh-100">
-                        <h2 id="languages" class="fw-bolder">Languages/Frameworks/Pre-processors</h2>
-                        <p class="ps-4">Here I will show the programming languages, frameworks and front-end
-                            pre-processors I know.</p>
-                        <div class="ps-2">
-                            <div class="w-100 h-auto d-inline-block">
-                                <h4>Languages</h4>
-                                <ul>
-                                    <li class="d-flex align-middle">
-                                        <p class="float-start w-50">PHP</p>
-                                        <div class="float-end p-0 w-50">
-                                            <font-awesome-icon icon="fa-solid fa-star"
-                                                class="m-0 me-2 p-0 text-warning" />
-                                            <font-awesome-icon icon="fa-solid fa-star"
-                                                class="m-0 me-2 p-0 text-warning" />
-                                            <font-awesome-icon icon="fa-solid fa-star"
-                                                class="m-0 me-2 p-0 text-warning" />
-                                        </div>
-                                    </li>
-                                    <li class="d-flex align-middle">
-                                        <p class="float-start w-50">C#</p>
-                                        <div class="float-end p-0 w-50">
-                                            <font-awesome-icon icon="fa-solid fa-star" class="m-0 me-2 p-0 text-warning" />
-                                            <font-awesome-icon icon="fa-solid fa-star" class="m-0 me-2 p-0 text-warning" />
-                                            <font-awesome-icon icon="fa-solid fa-star" class="m-0 me-2 p-0 text-warning" />
-                                            <font-awesome-icon icon="fa-solid fa-star-half" class="m-0 me-2 p-0 text-warning" />
-                                        </div>
-                                    </li>
-                                    <li class="d-flex align-middle">
-                                        <p class="float-start w-50">SQL</p>
-                                        <div class="float-end p-0 w-50">
-                                            <font-awesome-icon icon="fa-solid fa-star" class="m-0 me-2 p-0 text-warning" />
-                                            <font-awesome-icon icon="fa-solid fa-star" class="m-0 me-2 p-0 text-warning" />
-                                            <font-awesome-icon icon="fa-solid fa-star" class="m-0 me-2 p-0 text-warning" />
-                                            <font-awesome-icon icon="fa-solid fa-star" class="m-0 me-2 p-0 text-warning" />
-                                        </div>
-                                    </li>
-                                    <li class="d-flex align-middle">
-                                        <p class="float-start w-50">Java</p>
-                                        <div class="float-end p-0 w-50">
-                                            <font-awesome-icon icon="fa-solid fa-star" class="m-0 me-2 p-0 text-warning" />
-                                            <font-awesome-icon icon="fa-solid fa-star" class="m-0 me-2 p-0 text-warning" />
-                                            <font-awesome-icon icon="fa-solid fa-star" class="m-0 me-2 p-0 text-warning" />
-                                            <font-awesome-icon icon="fa-solid fa-star" class="m-0 me-2 p-0 text-warning" />
-                                        </div>
-                                    </li>
-                                    <li class="d-flex align-middle">
-                                        <p class="float-start w-50">JavaScript</p>
-                                        <div class="float-end p-0 w-50">
-                                            <font-awesome-icon icon="fa-solid fa-star" class="m-0 me-2 p-0 text-warning" />
-                                            <font-awesome-icon icon="fa-solid fa-star" class="m-0 me-2 p-0 text-warning" />
-                                            <font-awesome-icon icon="fa-solid fa-star" class="m-0 me-2 p-0 text-warning" />
-                                            <font-awesome-icon icon="fa-solid fa-star" class="m-0 me-2 p-0 text-warning" />
-                                        </div>
-                                    </li>
-                                    <li class="d-flex align-middle">
-                                        <p class="float-start w-50">HTML/CSS</p>
-                                        <div class="float-end p-0 w-50">
-                                            <font-awesome-icon icon="fa-solid fa-star" class="m-0 me-2 p-0 text-warning" />
-                                            <font-awesome-icon icon="fa-solid fa-star" class="m-0 me-2 p-0 text-warning" />
-                                            <font-awesome-icon icon="fa-solid fa-star" class="m-0 me-2 p-0 text-warning" />
-                                            <font-awesome-icon icon="fa-solid fa-star" class="m-0 me-2 p-0 text-warning" />
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="w-100 h-auto d-inline-block">
-                                <h4>Pre-processor</h4>
-                                <ul>
-                                    <li class="d-flex align-middle">
-                                        <p class="float-start w-50">SCSS</p>
-                                        <div class="float-end p-0 w-50">
-                                            <font-awesome-icon icon="fa-solid fa-star" class="m-0 me-2 p-0 text-warning" />
-                                            <font-awesome-icon icon="fa-solid fa-star" class="m-0 me-2 p-0 text-warning" />
-                                            <font-awesome-icon icon="fa-solid fa-star" class="m-0 me-2 p-0 text-warning" />
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div class="w-100 h-auto d-inline-block">
-                                <h4>Frameworks</h4>
-                                <ul>
-                                    <li class="d-flex align-middle">
-                                        <p class="float-start w-50">React Native</p>
-                                        <div class="float-end p-0 w-50">
-                                            <font-awesome-icon icon="fa-solid fa-star" class="m-0 me-2 p-0 text-warning" />
-                                            <font-awesome-icon icon="fa-solid fa-star" class="m-0 me-2 p-0 text-warning" />
-                                            <font-awesome-icon icon="fa-solid fa-star" class="m-0 me-2 p-0 text-warning" />
-                                            <font-awesome-icon icon="fa-solid fa-star-half" class="m-0 me-2 p-0 text-warning" />
-                                        </div>
-                                    </li>
-                                    <li class="d-flex align-middle">
-                                        <p class="float-start w-50">Struts 2</p>
-                                        <div class="float-end p-0 w-50">
-                                            <font-awesome-icon icon="fa-solid fa-star" class="m-0 me-2 p-0 text-warning" />
-                                            <font-awesome-icon icon="fa-solid fa-star" class="m-0 me-2 p-0 text-warning" />
-                                            <font-awesome-icon icon="fa-solid fa-star" class="m-0 me-2 p-0 text-warning" />
-                                            <font-awesome-icon icon="fa-solid fa-star-half" class="m-0 me-2 p-0 text-warning" />
-                                        </div>
-                                    </li>
-                                    <li class="d-flex align-middle">
-                                        <p class="float-start w-50">Angular</p>
-                                        <div class="float-end p-0 w-50">
-                                            <font-awesome-icon icon="fa-solid fa-star" class="m-0 me-2 p-0 text-warning" />
-                                            <font-awesome-icon icon="fa-solid fa-star" class="m-0 me-2 p-0 text-warning" />
-                                            <font-awesome-icon icon="fa-solid fa-star" class="m-0 me-2 p-0 text-warning" />
-                                            <font-awesome-icon icon="fa-solid fa-star-half" class="m-0 me-2 p-0 text-warning" />
-                                        </div>
-                                    </li>
-                                    <li class="d-flex align-middle">
-                                        <p class="float-start w-50">React</p>
-                                        <div class="float-end p-0 w-50">
-                                            <font-awesome-icon icon="fa-solid fa-star" class="m-0 me-2 p-0 text-warning" />
-                                            <font-awesome-icon icon="fa-solid fa-star" class="m-0 me-2 p-0 text-warning" />
-                                            <font-awesome-icon icon="fa-solid fa-star" class="m-0 me-2 p-0 text-warning" />
-                                            <font-awesome-icon icon="fa-solid fa-star" class="m-0 me-2 p-0 text-warning" />
-                                        </div>
-                                    </li>
-                                    <li class="d-flex align-middle">
-                                        <p class="float-start w-50">Bootstrap</p>
-                                        <div class="float-end p-0 w-50">
-                                            <font-awesome-icon icon="fa-solid fa-star" class="m-0 me-2 p-0 text-warning" />
-                                            <font-awesome-icon icon="fa-solid fa-star" class="m-0 me-2 p-0 text-warning" />
-                                            <font-awesome-icon icon="fa-solid fa-star" class="m-0 me-2 p-0 text-warning" />
-                                            <font-awesome-icon icon="fa-solid fa-star" class="m-0 me-2 p-0 text-warning" />
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
+                        <h2 id="projects" class="fw-bolder">Projects</h2>
+                        <div class="ps-3">
+                            <Projects/>
                         </div>
                     </section>
                 </main>
@@ -247,7 +195,6 @@ export default {
 </template>
 
 <script setup>
-
 import { ref, onMounted } from 'vue'
 
 const currentSection = ref('')

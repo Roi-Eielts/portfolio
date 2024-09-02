@@ -17,7 +17,30 @@ body {
     height: 100%;
     width: 100%;
     color: $text-color;
+
+    font-family: "Roboto Mono", sans-serif;
+    font-size: 1rem * 1.05 !important;
 }
+
+.headText {
+    text-decoration: none;
+    display: inline-block;
+    font-family: "Poppins",Sans-serif !important;
+    font-weight: bold;
+    letter-spacing: 2.2px;
+    font-size: 4rem;
+    line-height: 1;
+    font-weight: black;
+    color: $text-color;
+    // background: linear-gradient(135deg,
+    //         #D62828,
+    //         #F77F00,
+    //         #FCBF49,
+    //         #EAE2B7);
+    // -webkit-background-clip: text;
+    // -webkit-text-fill-color: transparent;
+}
+
 
 .color2 {
     color: $text-color2 !important;
@@ -44,6 +67,7 @@ body {
     &:hover {
         transform: scale(1.2);
         color: $text-color;
+
         .gmail {
             transition: 250ms;
             color: #c71610;
@@ -66,6 +90,7 @@ body {
 }
 
 .navText {
+    letter-spacing: -0.25px;
     display: flex;
     width: fit-content;
     align-items: center;
@@ -109,4 +134,9 @@ body {
         width: 3rem;
         transition: width 250ms, border-bottom 250ms;
     }
+}
+
+.px-4-5{
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
