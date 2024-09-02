@@ -3,7 +3,7 @@ name: Deploy
 on:
   push:
     branches:
-      - master 
+      - master
 
 jobs:
   build:
@@ -35,9 +35,14 @@ jobs:
     name: Deploy
     needs: build
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/master' 
+    if: github.ref == 'refs/heads/master'
 
     steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+        with:
+          ref: master
+
       - name: Download artifact
         uses: actions/download-artifact@v3
         with:
