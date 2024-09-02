@@ -108,13 +108,13 @@ export default {
                                 more
                                 experiences!
                             </p>
-                            <div class="d-flex justify-content-between mt-5">
+                        </div>
+                        <div class="d-flex justify-content-between mt-5">
                                 <button class="mx-auto btn color" @click="downloadResume">
                                     <font-awesome-icon icon="fa-solid fa-download" class="me-2" />Resume</button>
                                 <button class="mx-auto btn color" @click="sendMail">
                                     <font-awesome-icon icon="fa-solid fa-envelope" class="me-2" />Email me</button>
 
-                            </div>
                         </div>
                     </section>
                     <section class="min-vh-100 w-100">
