@@ -1,24 +1,58 @@
 {
     "projects": [
         {
-            "image": "src/assets/logo.svg",
-            "projectName": "Test",
-            "projectDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultrices elementum nisl. Cras viverra tempor velit, non porttitor mi volutpat non. Aenean eu luctus leo. Morbi ex felis, efficitur sit amet lacinia ac, molestie sit amet dui. Mauris id est nec metus malesuada porttitor non sed dui. Suspendisse a arcu at magna posuere semper nec sed nisl. Ut bibendum velit eu libero dapibus, non imperdiet mi scelerisque. Sed sem mi, iaculis nec condimentum molestie, molestie eget urna. Morbi in dolor eu eros porta blandit sit amet convallis velit. Suspendisse potenti. Vestibulum vehicula nulla quis lectus sagittis vestibulum. Suspendisse cursus volutpat ligula vel aliquam. Etiam accumsan, lacus id pretium luctus, lacus massa ornare quam, ac dapibus ligula ante vitae quam. Vivamus accumsan, neque quis vulputate ornare, ante est vestibulum ante, non blandit turpis libero non dui. Mauris sed massa vehicula, faucibus nibh vel, tincidunt quam. In quis est vel metus lobortis pharetra.",
+            "image": "src/assets/images/Pasimo_LoginPage.png",
+            "projectName": "Pasimo",
+            "projectDescription": "This project is a check-in system that allows students to check in using their student cards. Teachers can then view a real-time list of students who have checked in, are late, or are absent."
+        },
+        {
+            "image": "src/assets/images/QR-Goats_LoginPage.png",
+            "projectName": "QR-goats",
+            "projectDescription": "QR-Goats is a project that removes the need for the card reader of pasimo with a qrcode."
+        },
+        {
+            "image": "src/assets/images/slidehub.png",
+            "projectName": "Slidehub",
+            "projectDescription": "Slidehub is a project that shows slides that are created by the teachers. the slides contain data like breaks, upcoming events and quotes of a teacher (for fun). So in short: a application to show data from teachers to students."
+        },
+        {
+            "image": "src/assets/images/ReactNative.png",
+            "projectName": "PhoneApp",
+            "projectDescription": "I learned to develop a React Native phone app myself to challenge my knowledge and gain new skills. For this application I created a simple stocked app that can track quantities and scan barcodes via the camera.",
             "links": [
                 {
-                    "github": "https://github.com/MiguelBrugge/Portfolio-Milan/blob/master/src/components/ProjectElement.jsx",
-                    "website": "https://github.com/MiguelBrugge/Portfolio-Milan/blob/master/src/components/ProjectElement.jsx"
+                    "frontEnd": "https://github.com/Roi-Eielts/PhoneAppFrontEnd",
+                    "backend": "https://github.com/Roi-Eielts/React-Native-phone-app-back-end"
                 }
             ]
         },
         {
-            "image": "src/assets/logo.svg",
-            "projectName": "Test",
-            "projectDescription": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultrices elementum nisl. Cras viverra tempor velit, non porttitor mi volutpat non. Aenean eu luctus leo. Morbi ex felis, efficitur sit amet lacinia ac, molestie sit amet dui. Mauris id est nec metus malesuada porttitor non sed dui. Suspendisse a arcu at magna posuere semper nec sed nisl. Ut bibendum velit eu libero dapibus, non imperdiet mi scelerisque. Sed sem mi, iaculis nec condimentum molestie, molestie eget urna. Morbi in dolor eu eros porta blandit sit amet convallis velit. Suspendisse potenti. Vestibulum vehicula nulla quis lectus sagittis vestibulum. Suspendisse cursus volutpat ligula vel aliquam. Etiam accumsan, lacus id pretium luctus, lacus massa ornare quam, ac dapibus ligula ante vitae quam. Vivamus accumsan, neque quis vulputate ornare, ante est vestibulum ante, non blandit turpis libero non dui. Mauris sed massa vehicula, faucibus nibh vel, tincidunt quam. In quis est vel metus lobortis pharetra.",
+            "image": "src/assets/images/THREE.png",
+            "projectName": "Three.js learning",
+            "projectDescription": "I made a simple project in three.js to get a little bit of knowledge on how three.js works and how to work with it.",
             "links": [
                 {
-                    "github": "https://github.com/MiguelBrugge/Portfolio-Milan/blob/master/src/components/ProjectElement.jsx",
-                    "website": "https://github.com/MiguelBrugge/Portfolio-Milan/blob/master/src/components/ProjectElement.jsx"
+                    "github": "https://github.com/Roi-Eielts/Three.js"
+                }
+            ]
+        },
+        {
+            "image": "src/assets/images/VacationHome.png",
+            "projectName": "VacationHome",
+            "projectDescription": "This was a project from my front-end development teacher to learn forms, encryption and how to connect PHP to a database.",
+            "links": [
+                {
+                    "github": "https://github.com/Roi-Eielts/Three.js"
+                }
+            ]
+        },
+        {
+            "image": "src/assets/images/pokemon.jpg",
+            "projectName": "Pokemon game",
+            "projectDescription": "this project was made so we could learn on how to read sequence diagrams. this game is a console game, where players begin by entering their name and selecting their starter Pokemon. Once they have chosen a pokemon, then they can explore the world and fight other trainers/pokemons.",
+            "links": [
+                {
+                    "github": "https://github.com/Roi-Eielts/Pokemon-Game"
                 }
             ]
         }

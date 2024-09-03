@@ -2,15 +2,20 @@
 import Projects from './projects.vue'
 
 export default {
+    data() {
+        return {
+            knowledge: ["C#", "CSS", "JavaScript", "Java", "HTML", "PHP", "TypeScript", "Python", "Hibernate", ".Net", "Angular", "Bootstrap", "jQuery", "React Native", "React", "SCSS", "Spring", "Vue.js", "Three.js", "SEO"]
+        }
+    },
     methods: {
         sendMail() {
             window.location.href = "mailto:roieielts@gmail.com";
         },
         downloadResume() {
             const link = document.createElement('a');
-            link.href = '../src/assets/Resume.pdf';
+            link.href = './src/assets/Resume.pdf';
             link.target = '_blank';
-            link.download = "Resume Roi Eielts.pdf";
+            link.download = "Resume_Roi_Eielts.pdf";
             document.body.appendChild(link);
             link.click();
             document.body.removeChild(link);
@@ -120,65 +125,10 @@ export default {
                     <section class="min-vh-100 w-100">
                         <h2 id="Knowledge" class="fw-bolder">Knowledge</h2>
                         <div class="d-flex flex-wrap">
-                            <div class="mb-4 me-4 py-2 px-3 bg-secondary rounded">
-                                <p class="fw-bold fs-5 m-0 p-0 d-inline-flex">C#</p>
-                            </div>
-                            <div class="mb-4 me-4 py-2 px-3 bg-secondary rounded">
-                                <p class="fw-bold fs-5 m-0 p-0 d-inline-flex">CSS</p>
-                            </div>
-                            <div class="mb-4 me-4 py-2 px-3 bg-secondary rounded">
-                                <p class="fw-bold fs-5 m-0 p-0 d-inline-flex">JavaScript</p>
-                            </div>
-                            <div class="mb-4 me-4 py-2 px-3 bg-secondary rounded">
-                                <p class="fw-bold fs-5 m-0 p-0 d-inline-flex">Java</p>
-                            </div>
-                            <div class="mb-4 me-4 py-2 px-3 bg-secondary rounded">
-                                <p class="fw-bold fs-5 m-0 p-0 d-inline-flex">HTML</p>
-                            </div>
-                            <div class="mb-4 me-4 py-2 px-3 bg-secondary rounded">
-                                <p class="fw-bold fs-5 m-0 p-0 d-inline-flex">PHP</p>
-                            </div>
-                            <div class="mb-4 me-4 py-2 px-3 bg-secondary rounded">
-                                <p class="fw-bold fs-5 m-0 p-0 d-inline-flex">TypeScript</p>
-                            </div>
-                            <div class="mb-4 me-4 py-2 px-3 bg-secondary rounded">
-                                <p class="fw-bold fs-5 m-0 p-0 d-inline-flex">Python</p>
-                            </div>
-                            <div class="mb-4 me-4 py-2 px-3 bg-secondary rounded">
-                                <p class="fw-bold fs-5 m-0 p-0 d-inline-flex">Hibernate</p>
-                            </div>
-                            <div class="mb-4 me-4 py-2 px-3 bg-secondary rounded">
-                                <p class="fw-bold fs-5 m-0 p-0 d-inline-flex">.Net</p>
-                            </div>
-                            <div class="mb-4 me-4 py-2 px-3 bg-secondary rounded">
-                                <p class="fw-bold fs-5 m-0 p-0 d-inline-flex">Angular</p>
-                            </div>
-                            <div class="mb-4 me-4 py-2 px-3 bg-secondary rounded">
-                                <p class="fw-bold fs-5 m-0 p-0 d-inline-flex">Bootstrap</p>
-                            </div>
-                            <div class="mb-4 me-4 py-2 px-3 bg-secondary rounded">
-                                <p class="fw-bold fs-5 m-0 p-0 d-inline-flex">jQuery</p>
-                            </div>
-                            <div class="mb-4 me-4 py-2 px-3 bg-secondary rounded">
-                                <p class="fw-bold fs-5 m-0 p-0 d-inline-flex">React Native</p>
-                            </div>
-                            <div class="mb-4 me-4 py-2 px-3 bg-secondary rounded">
-                                <p class="fw-bold fs-5 m-0 p-0 d-inline-flex">React</p>
-                            </div>
-                            <div class="mb-4 me-4 py-2 px-3 bg-secondary rounded">
-                                <p class="fw-bold fs-5 m-0 p-0 d-inline-flex">SCSS</p>
-                            </div>
-                            <div class="mb-4 me-4 py-2 px-3 bg-secondary rounded">
-                                <p class="fw-bold fs-5 m-0 p-0 d-inline-flex">Spring</p>
-                            </div>
-                            <div class="mb-4 me-4 py-2 px-3 bg-secondary rounded">
-                                <p class="fw-bold fs-5 m-0 p-0 d-inline-flex">Vue.js</p>
-                            </div>
-                            <div class="mb-4 me-4 py-2 px-3 bg-secondary rounded">
-                                <p class="fw-bold fs-5 m-0 p-0 d-inline-flex">Three.js</p>
-                            </div>
-                            <div class="mb-4 me-4 py-2 px-3 bg-secondary rounded">
-                                <p class="fw-bold fs-5 m-0 p-0 d-inline-flex">SEO</p>
+                            <div v-for="knownledge in knowledge">
+                                <div class="mb-4 me-4 py-2 px-3 bg-secondary rounded">
+                                    <p class="fw-bold fs-5 m-0 p-0 d-inline-flex">{{ knownledge }}</p>
+                                </div>
                             </div>
                         </div>
                     </section>

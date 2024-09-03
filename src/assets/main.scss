@@ -80,6 +80,15 @@ body {
     }
 }
 
+.projectLink {
+    color: $text-color2;
+    transition: 250ms ease-in-out;
+    &:hover {
+        transform: scale(1.2);
+        color: $text-color;
+    }
+}
+
 // nav
 .navLine {
     width: 2rem;
