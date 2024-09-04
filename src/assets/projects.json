@@ -1,22 +1,22 @@
 {
     "projects": [
         {
-            "image": "src/assets/images/Pasimo_LoginPage.png",
+            "image": "/images/Pasimo_LoginPage.png",
             "projectName": "Pasimo",
             "projectDescription": "This project is a check-in system that allows students to check in using their student cards. Teachers can then view a real-time list of students who have checked in, are late, or are absent."
         },
         {
-            "image": "src/assets/images/QR-Goats_LoginPage.png",
+            "image": "images/QR-Goats_LoginPage.png",
             "projectName": "QR-goats",
             "projectDescription": "QR-Goats is a project that removes the need for the card reader of pasimo with a qrcode."
         },
         {
-            "image": "src/assets/images/slidehub.png",
+            "image": "images/slidehub.png",
             "projectName": "Slidehub",
             "projectDescription": "Slidehub is a project that shows slides that are created by the teachers. the slides contain data like breaks, upcoming events and quotes of a teacher (for fun). So in short: a application to show data from teachers to students."
         },
         {
-            "image": "src/assets/images/ReactNative.png",
+            "image": "images/ReactNative.png",
             "projectName": "PhoneApp",
             "projectDescription": "I learned to develop a React Native phone app myself to challenge my knowledge and gain new skills. For this application I created a simple stocked app that can track quantities and scan barcodes via the camera.",
             "links": [
@@ -27,7 +27,7 @@
             ]
         },
         {
-            "image": "src/assets/images/THREE.png",
+            "image": "images/THREE.png",
             "projectName": "Three.js learning",
             "projectDescription": "I made a simple project in three.js to get a little bit of knowledge on how three.js works and how to work with it.",
             "links": [
@@ -37,7 +37,7 @@
             ]
         },
         {
-            "image": "src/assets/images/VacationHome.png",
+            "image": "images/VacationHome.png",
             "projectName": "VacationHome",
             "projectDescription": "This was a project from my front-end development teacher to learn forms, encryption and how to connect PHP to a database.",
             "links": [
@@ -47,7 +47,7 @@
             ]
         },
         {
-            "image": "src/assets/images/pokemon.jpg",
+            "image": "images/pokemon.jpg",
             "projectName": "Pokemon game",
             "projectDescription": "this project was made so we could learn on how to read sequence diagrams. this game is a console game, where players begin by entering their name and selecting their starter Pokemon. Once they have chosen a pokemon, then they can explore the world and fight other trainers/pokemons.",
             "links": [
