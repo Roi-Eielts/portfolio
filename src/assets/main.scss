@@ -1,12 +1,11 @@
 @import "bootstrap/scss/bootstrap";
 
-$background-color: #1B1B1E; // Darker Deep Slate for background
-$text-color: #E0E1DD; // Light Gray for text
-$text-color2: #4A5D23; // Olive Green for accents
-$text-color3: #B0B0B0; // Medium Gray for secondary text
-$hover: #3D4C2E; // Darker Olive Green for hover effects
+$background-color: #1B1B1E;
+$text-color: #E0E1DD;
+$text-color2: #4A5D23;
+$text-color3: #B0B0B0;
+$hover: #3D4C2E;
 
-// https://coolors.co/palette/0d1b2a-1b263b-415a77-778da9-e0e1dd
 html {
     scroll-behavior: smooth;
 }
@@ -89,13 +88,12 @@ body {
     }
 }
 
-// nav
 .navLine {
     width: 2rem;
     margin-right: 1rem;
     display: inline-block;
     border-bottom: $text-color3 2px solid;
-    transition: width 250ms, border-bottom 250ms; // Apply transition outside of :hover
+    transition: width 250ms, border-bottom 250ms; 
 }
 
 .navText {
@@ -106,7 +104,7 @@ body {
     color: $text-color3;
     text-decoration: none;
     font-weight: 600;
-    transition: color 250ms, font-weight 250ms; // Apply transition outside of :hover
+    transition: color 250ms, font-weight 250ms;
 
     &:hover {
         color: $text-color;
