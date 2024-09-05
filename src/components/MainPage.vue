@@ -124,9 +124,9 @@ export default {
                     </section>
                     <section class="min-vh-100 w-100">
                         <h2 id="Knowledge" class="fw-bolder">Knowledge</h2>
-                        <div class="d-flex flex-wrap">
+                        <div class="d-flex flex-wrap mt-4">
                             <div v-for="knownledge in knowledge">
-                                <div class="mb-4 me-4 py-2 px-3 bg-secondary rounded">
+                                <div class="mb-4 me-4 py-2 px-3 bg-success rounded">
                                     <p class="fw-bold fs-5 m-0 p-0 d-inline-flex">{{ knownledge }}</p>
                                 </div>
                             </div>
