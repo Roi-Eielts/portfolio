@@ -61,7 +61,7 @@ export default {
                         <a class="offsiteLink me-4" href="https://github.com/Roi-Eielts">
                             <font-awesome-icon class="h-100" icon="fa-brands fa-github" />
                         </a>
-                        <a class="offsiteLink me-4" href="https://github.com/Roi-Eielts">
+                        <a class="offsiteLink me-4" href="https://www.linkedin.com/in/roi-eielts/">
                             <font-awesome-icon class="h-100 linkedIn" icon="fa-brands fa-linkedin" />
                         </a>
                         <a class="offsiteLink" @click="sendMail" href="#">
