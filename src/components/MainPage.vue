@@ -4,7 +4,7 @@ import Projects from './projects.vue'
 export default {
     data() {
         return {
-            knowledge: ["C#", "CSS", "JavaScript", "Java", "HTML", "PHP", "TypeScript", "Python", "Hibernate", ".Net", "Angular", "Bootstrap", "jQuery", "React Native", "React", "SCSS", "Spring", "Vue.js", "Three.js", "SEO"]
+            knowledge: ["C#", "CSS", "JavaScript", "Java", "HTML", "PHP", "TypeScript", "Hibernate", ".Net", "Angular", "Bootstrap", "jQuery", "React Native", "React", "SCSS", "Spring", "Vue.js", "Three.js", "SEO"]
         }
     },
     methods: {
