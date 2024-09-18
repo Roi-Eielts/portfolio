@@ -4,8 +4,7 @@ import Projects from './projects.vue'
 export default {
     data() {
         return {
-            knowledge: ["C#", "CSS", "JavaScript", "Java", "HTML", "PHP", "TypeScript", "Hibernate", ".Net", "Angular", "Bootstrap", "jQuery", "React Native", "React", "SCSS", "Spring", "Vue.js", "Three.js", "SEO"]
-        }
+            knowledge: ["Scrum", "C#", "CSS", "JavaScript", "Java", "HTML", "PHP", "TypeScript", "Hibernate", ".Net", "Angular", "Bootstrap", "jQuery", "React Native", "React", "SCSS", "Spring", "Vue.js", "Three.js", "SEO"]        }
     },
     methods: {
         sendMail() {
@@ -13,7 +12,7 @@ export default {
         },
         downloadResume() {
             const link = document.createElement('a');
-            link.href = './src/assets/Resume.pdf';
+            link.href = '/portfolio/Resume.pdf';
             link.target = '_blank';
             link.download = "Resume_Roi_Eielts.pdf";
             document.body.appendChild(link);
@@ -70,10 +69,10 @@ export default {
                     </div>
                 </div>
             </div>
-            <div class="flex col-md-6 mt-5 pt-5">
-                <main class="mt-5">
+            <div class="flex col-md-6">
+                <main>
                     <section class="min-vh-100">
-                        <h2 id="aboutMe" class="fw-bolder">About me</h2>
+                        <h2 id="aboutMe" class="fw-bolder mt-5 pt-5">About me</h2>
                         <div class="ps-3">
                             <p>
                                 I'm a young <b>software developer</b>, aged 20 from Heikenszand, Netherlands.
@@ -123,7 +122,7 @@ export default {
                         </div>
                     </section>
                     <section class="min-vh-100 w-100">
-                        <h2 id="Knowledge" class="fw-bolder">Knowledge</h2>
+                        <h2 id="Knowledge" class="fw-bolder mt-5 pt-5">Knowledge</h2>
                         <div class="d-flex flex-wrap mt-4">
                             <div v-for="knownledge in knowledge">
                                 <div class="mb-4 me-4 py-2 px-3 bg-success rounded">
@@ -133,7 +132,7 @@ export default {
                         </div>
                     </section>
                     <section class="min-vh-100">
-                        <h2 id="projects" class="fw-bolder">Projects</h2>
+                        <h2 id="projects" class="fw-bolder mt-5 pt-5">Projects</h2>
                         <div class="ps-3">
                             <Projects/>
                         </div>
